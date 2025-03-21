@@ -1,0 +1,232 @@
+quest de las palabras:
+
+Palabras reservadas en Python
+
+False: Representa el valor booleano falso.
+
+resultado = False
+print(resultado)  # Output: False
+
+
+None: Representa la ausencia de un valor.
+
+variable = None
+print(variable)  # Output: None
+
+
+True: Representa el valor booleano verdadero.
+
+es_mayor = True
+print(es_mayor)  # Output: True
+
+
+and: Operador lógico "y".
+
+print(True and False)  # Output: False
+
+
+as: Se usa para dar un alias en importaciones.
+
+import math as m
+print(m.sqrt(16))  # Output: 4.0
+
+
+assert: Se usa para depuración, verifica si una condición es verdadera.
+
+x = 10
+assert x > 0  # No genera error
+
+
+break: Sale de un bucle antes de que termine.
+
+for i in range(5):
+    if i == 3:
+        break
+    print(i)  # Output: 0, 1, 2
+
+
+class: Define una clase.
+
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+
+continue: Salta a la siguiente iteración del bucle.
+
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)  # Output: 0, 1, 3, 4
+
+
+def: Define una función.
+
+def suma(a, b):
+    return a + b
+print(suma(3, 4))  # Output: 7
+
+
+del: Elimina una variable o un elemento de una lista.
+
+lista = [1, 2, 3]
+del lista[1]
+print(lista)  # Output: [1, 3]
+
+
+elif: Condición adicional en estructuras if.
+
+x = 5
+if x > 10:
+    print("Mayor a 10")
+elif x > 3:
+    print("Mayor a 3")  # Output: Mayor a 3
+
+
+else: Se usa con if para definir una alternativa.
+
+x = 2
+if x > 5:
+    print("Mayor a 5")
+else:
+    print("No es mayor a 5")  # Output: No es mayor a 5
+
+
+except: Maneja excepciones en bloques try.
+
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("No se puede dividir por cero")  # Output: No se puede dividir por cero
+
+
+finally: Bloque de código que se ejecuta siempre en try.
+
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Error")
+finally:
+    print("Este código siempre se ejecuta")  
+
+
+for: Crea un bucle.
+
+for i in range(3):
+    print(i)  # Output: 0, 1, 2
+
+
+from: Importa módulos específicos.
+
+from math import pi
+print(pi)  # Output: 3.141592653589793
+
+
+global: Declara variables globales dentro de funciones.
+
+x = 10
+def cambiar():
+    global x
+    x = 20
+cambiar()
+print(x)  # Output: 20
+
+
+if: Condición lógica.
+
+x = 5
+if x > 3:
+    print("Mayor a 3")  # Output: Mayor a 3
+
+
+import: Importa módulos.
+
+import math
+print(math.sqrt(16))  # Output: 4.0
+
+
+in: Verifica si un elemento está en una colección.
+
+print(3 in [1, 2, 3])  # Output: True
+
+
+is: Compara identidad de objetos.
+
+x = None
+print(x is None)  # Output: True
+
+
+lambda: Crea funciones anónimas.
+
+suma = lambda a, b: a + b
+print(suma(2, 3))  # Output: 5
+
+
+nonlocal: Modifica variables de un ámbito externo a la función.
+
+def externa():
+    x = 10
+    def interna():
+        nonlocal x
+        x = 20
+    interna()
+    print(x)  # Output: 20
+externa()
+
+
+not: Operador lógico "no".
+
+print(not True)  # Output: False
+
+
+or: Operador lógico "o".
+
+print(True or False)  # Output: True
+
+
+pass: Indica que no se ejecuta ninguna acción.
+
+def funcion():
+    pass  # No hace nada
+
+
+raise: Lanza una excepción.
+
+raise ValueError("Ocurrió un error")  
+
+
+return: Devuelve un valor desde una función.
+
+def doble(x):
+    return x * 2
+print(doble(4))  # Output: 8
+
+
+try: Maneja excepciones.
+
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Error de división por cero")
+
+
+while: Crea un bucle mientras una condición sea verdadera.
+
+x = 0
+while x < 3:
+    print(x)
+    x += 1  # Output: 0, 1, 2
+
+
+with: Maneja contexto de recursos como archivos.
+
+with open("archivo.txt", "w") as f:
+    f.write("Hola")
+
+
+yield: Se usa en generadores para retornar valores.
+
+def contador():
+    for i in range(3):
+        yield i
+print(list(contador()))  # Output: [0, 1, 2]
