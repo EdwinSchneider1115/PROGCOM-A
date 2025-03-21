@@ -230,3 +230,49 @@ def contador():
     for i in range(3):
         yield i
 print(list(contador()))  # Output: [0, 1, 2]
+
+
+async: Define una función asincrónica.
+
+async def hola():
+    print("Hola, mundo!")
+
+
+await: Se usa dentro de funciones async para esperar una operación asincrónica.
+
+import asyncio
+
+async def espera():
+    await asyncio.sleep(1)
+    print("Terminó la espera")
+
+asyncio.run(espera())
+
+
+match: Se usa para realizar coincidencias de patrones (similar a switch en otros lenguajes).
+
+valor = 2
+match valor:
+    case 1:
+        print("Es uno")
+    case 2:
+        print("Es dos")  # Output: Es dos
+    case _:
+        print("No coincide")
+
+
+case: Se usa dentro de match para definir los diferentes patrones.
+
+match "Python":
+    case "Java":
+        print("Es Java")
+    case "Python":
+        print("Es Python")  # Output: Es Python
+
+
+except: Maneja errores en bloques try-except.
+
+try:
+    x = 1 / 0
+except ZeroDivisionError:
+    print("Error: División por cero")  # Output: Error: División por cero
